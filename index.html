@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+    <title>AUTHORITATIVE Cocktail DOCUMENTOR</title>
+</head>
+<body>
+    <h1>Cocktail Generator</h1>
+    <form id="cocktailform">
+        <fieldset id="fieldset1">
+            <legend>Date of birth</legend>
+            <p>We'll only use it to verify your age</p>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </fieldset>
+            <fieldset id="baseAlcohol">
+                <legend>Choose your base alcohol!</legend>
+                <label for="darkRum">Dark Rum</label>
+                    <input type="radio" id="darkRum" name="base">
+
+                    <label for="lightrum">Light Rum</label>
+                    <input type="radio" id="lightRum" name="base">
+
+                    <label for="vodka">Vodka</label>
+                    <input type="radio" id="vodka" name="base">
+
+                    <label for="gin">Gin</label>
+                    <input type="radio" id="gin" name="base">
+
+                    <label for="whisky">Whisky</label>
+                    <input type="radio" id="whisky" name="base">
+
+                    <label for="tequila">Tequila!</label>
+                    <input type="radio" id="tequila" name="base">
+
+                    <label for="mezcal">Mezcal</label>
+                    <input type="radio" id="mezcal" name="base">
+
+                    <label for="other">Other</label> 
+                    <input type="text" id="other" name="base">
+            </fieldset>
+
+            <fieldset id="secondIngredients">
+                <legend>Choose other flavours!</legend>
+                <label for="cream">Cream</label>
+                    <input type="checkbox" id="cream" name="flavour">
+
+                    <label for="sugar">Sugar</label>
+                    <input type="checkbox" id="sugar" name="flavour">
+
+                    <label for="lemon">Fresh Lemon Juice</label>
+                    <input type="checkbox" id="lemon" name="flavour">
+
+                    <label for="pineapple">Pineapple Juice</label>
+                    <input type="checkbox" id="pineapple" name="flavour">
+
+                    <label for="kahlua">Kahlua Coffee Liqueur</label>
+                    <input type="checkbox" id="kahlua" name="flavour">
+
+                    <label for="vermouth">Vermouth</label>
+                    <input type="checkbox" id="vermouth" name="flavour">
+
+                    <label for="campari">Campari</label>
+                    <input type="checkbox" id="campari" name="flavour">
+
+                    <label for="cream">Cream</label>
+                    <input type="checkbox" id="cream" name="flavour">
+
+                    <label for="blue">Blue Curaçao</label>
+                    <input type="checkbox" id="blue" name="flavour">
+
+                    <label for="egg">Egg White</label>
+                    <input type="checkbox" id="egg" name="flavour">
+
+                    <label for="other">Other</label> 
+                    <input type="text" id="other" name="flavour">
+            </fieldset>
+
+            <fieldset>
+                <legend>Shaken or stirred?</legend>
+                <label for="shaken">Shaken</label>
+                <input type="radio" id="shaken" name="dilute">
+
+                <label for="stirred">Stirred</label>
+                <input type="radio" id="stirred" name="dilte">
+
+                <label for="dilution">How long to dilute it for?</label>
+                <input type="range" id="dilution" name="dilte" step="1" min="0" max="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Name your cocktail!</legend>
+                <label for="Name">Name</label>
+                <input type="text" id="nameInput" name="name" placeholder="Be Creative!" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Subscribe</legend>
+                <label for="email">Email</label>
+                <input type="email" id="userEmail" name="userEmail">
+                <p>Beware: We will send your email and all other data we can directly in to Zuckerberg's mouth</p>
+            </fieldset>
+
+            <button type="submit">Generate!</button>
+</form>
+    
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- eventlistening on input to check if .length is >15, then give focus to the next one
+use inputmode = “numeric”.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form id="cardForm">
+        <div>
+            <label for="cardNumber">Credit Card No:</label>
+            <input type="text" name="cardNumber" id="cardNumber" inputmode="numeric" required autofocus>
+            <div>
+            <label for="cardMonth">Month:</label>
+            <input type="text" name="cardMonth" id="cardMonth" inputmode="numeric" required>
+            <label for="cardyear">Year:</label>
+            <input type="text" name="cardYear" id="cardYear" inputmode="numeric" required>
+            </div>
+            <input type="submit" id="submit">
+        </div>
+    </form>
+    <script src="card.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body id="moviePage">
+  <!-- body: 
+    name":"Twilight","seasons":1,
+    '{"genres":["Horror","Romance"],"
+    "rating":5,
+    "ongoing":false,
+    "director":"Ed Sheeran"}'
+ -->
+
+    <div class="modal">
+        <form id="movieForm">
+            <h2>Internet TV Database 2</h2>
+        <label for="name">Name of the show:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="genre">Genre(s):</label>
+        <input type="text" id="genre" name="genre" required>
+
+        <label for="rating">Rating:</label>
+        <input type="range" value="1"min="1" max="5" step="0.2" id="rating" name="rating" required>
+        <p id="ratingFeedback">-</p>
+
+        <fieldset id="ongoingFieldset">
+        <legend>Is the show still ongoing?</legend>
+        <label for="ongoing">Yes
+        <input type="radio" id="ongoing" name="ongoing">
+    </label>
+
+        <label for="notOngoing">No
+        <input type="radio" id="notOngoing" name="ongoing">
+    </label>
+
+    <label for="seasons">Number of Seasons:</label>
+        <select id="seasons" name="seasons">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9+</option>
+        </select>
+
+    </fieldset>
+        <label for="director">Director</label>
+        <input type="text" id="director" name="director" required>
+
+        <input type="submit">
+
+    </form>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
